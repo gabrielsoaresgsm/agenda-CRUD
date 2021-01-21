@@ -1,5 +1,6 @@
 AGENDA = {}
 
+
 def mostrar_contatos():
     if AGENDA:
         for contato in AGENDA:
@@ -8,6 +9,7 @@ def mostrar_contatos():
     else:
         print('-' * 40)
         print('Não existe contatos cadastrados na agenda.')
+        
 
 def buscar_contato(contato):
     try:
@@ -65,6 +67,7 @@ def excluir_contato(contato):
     except Exception as error:
         print('Um erro inesperado ocorreu')
         print(error)
+        
 
 def exportar_contatos(nome_do_arquivo):
     try:
@@ -78,6 +81,7 @@ def exportar_contatos(nome_do_arquivo):
     except Exception as error:
         print('Algum erro ocorrou ao exportar contatos')
         print(error)
+        
 
 def importar_contatos(nome_arquivo):
     try:
@@ -140,6 +144,7 @@ def imprimir_menu():
     print('7 - Importar contatos para CSV')
     print('0 - Fechar agenda')
     print('-' * 40)
+    
 
 #INICIO DO PROGRAMA
 carregar_agenda()
